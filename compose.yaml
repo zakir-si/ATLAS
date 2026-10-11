@@ -1,0 +1,10 @@
+services:
+  atlas:
+    build:
+      context: .
+      dockerfile: deploy/Dockerfile
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      ATLAS_LOG_LEVEL: INFO
+    restart: unless-stopped
