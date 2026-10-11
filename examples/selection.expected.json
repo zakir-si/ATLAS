@@ -1,0 +1,10 @@
+{
+  "selected": {
+    "name": "candidate-a",
+    "quality": 0.85,
+    "accelerator_hours": 7.0
+  },
+  "quality_per_accelerator_hour": 0.12142857142857143,
+  "eligible_run_count": 1,
+  "considered_run_count": 3
+}
