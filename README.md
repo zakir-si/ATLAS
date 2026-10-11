@@ -32,6 +32,10 @@ Open http://127.0.0.1:8000/ for the UI and http://127.0.0.1:8000/docs for API do
 
 Use `atlas.benchmark.compare_repeated_runs` to summarize repeated baseline and candidate measurements. It reports average quality, accelerator-hours, peak memory, throughput, compute reduction and whether a predeclared quality gate passed. It requires at least two runs in each group. This is an analysis helper, not an optimization algorithm; it does not establish statistical significance or prove causality. See [the experiment protocol](docs/EXPERIMENT_PROTOCOL.md).
 
+## Research validation kit
+
+A reproducible validation scaffold is available in [`experiments/validation/`](experiments/validation/README.md). It compares the current selector with simple baselines, records fine-tuning measurements, and includes a preregistration template and analysis script. It is **not completed research evidence**: run the pilot, freeze the protocol, and complete the confirmatory study before making performance claims. The starter experiment measures selected-run resource use, not total search savings.
+
 ## Research integrity
 
 Predeclare the quality metric, threshold and compute budget. Keep train/validation/test splits separate. Compare against a strong baseline with the same task and evaluation protocol. Record hardware, duration, tokens, memory, versions, seed and code revision. Include hyperparameter-search compute. Repeat final experiments where feasible and report uncertainty and negative results.
