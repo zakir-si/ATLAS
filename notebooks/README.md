@@ -8,3 +8,8 @@
 6. Download artifacts to your own storage; Colab sessions are temporary.
 
 The notebook implements a LoRA baseline. It is not a novel algorithm and does not prove ATLAS is more efficient.
+
+
+## Repository-integrated measurement notebook
+
+Open [`atlas_colab_measurements.ipynb`](atlas_colab_measurements.ipynb) in Google Colab. It clones the current `main` branch of this repository, imports ATLAS's `RunResult` and benchmark helper, runs a small LoRA baseline, and exports a JSON manifest including the checked-out ATLAS commit SHA. It does not claim the baseline is an ATLAS optimization or infer task quality from validation loss. The current benchmark API needs a normalized task-specific quality score before a valid comparison can be made.
