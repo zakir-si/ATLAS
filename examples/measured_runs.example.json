@@ -1,0 +1,5 @@
+[
+  {"name":"baseline","quality":0.85,"accelerator_hours":10.0,"peak_memory_gb":18.0,"tokens_per_second":100.0},
+  {"name":"candidate-a","quality":0.85,"accelerator_hours":7.0,"peak_memory_gb":12.0,"tokens_per_second":130.0},
+  {"name":"candidate-b","quality":0.82,"accelerator_hours":4.0,"peak_memory_gb":9.0,"tokens_per_second":165.0}
+]
